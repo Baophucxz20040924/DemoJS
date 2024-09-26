@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+</head>
+<body>
+
+    <h2>Order Confirmation</h2>
+    <p id="orderMessage"></p>
+    <p id="billMessage"></p>
+    <p id="emailMessage"></p>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('customerName');
+        const email = urlParams.get('customerEmail');
+        const quantity = parseInt(urlParams.get('quantity'));
+        const pricePerUnit = 9.95;
+        const totalCost = pricePerUnit * quantity;
+
+        document.getElementById('orderMessage').innerText = "Thank you for your order of " + quantity + " widgets, " + name + ".";
+        document.getElementById('billMessage').innerText = "At $" + pricePerUnit + " per unit, your bill will be $" + totalCost.toFixed(2) + ".";
+        document.getElementById('emailMessage').innerText = "You will shortly receive an email confirmation at " + email + ".";
+    </script>
+</body>
+</html>

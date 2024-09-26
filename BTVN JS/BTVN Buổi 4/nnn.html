@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cscs.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <h1 style="text-align: center;">Them THong tin sinh vien</h1>
+
+	<i class="material-icons">computer</i>
+
+    <form action="emailList" method="post">
+        <input type="hidden" name="action" value="add">
+        <label>MSSV</label>
+        <input type="number" name="mssv" required><br>
+    <label>Email: </label>
+        <input type="email" name="email" required><br>
+        <label>DOB</label>
+        <input type="date" name="DOB" required><br>
+        <label>Dchi </label>
+        <input type="text" name="diachi" required><br>
+        <label>Sdt </label>
+        <input type="number" name="sdt"><br>
+        <label for="tp">Que quan:</label>
+    <select id="tp">
+        <option value="">Danang</option>
+        <option value="">Nghean</option>
+        <option value="">HaNoi</option>
+        <option value="">HCm</option>
+        <option value="">DongNai</option>
+        <option value="">HaTinh</option>
+        <option value="">ThanhHoa</option>
+        <option value="">BacLieu</option>
+        <option value="">CaMau</option>
+        <option value="">DaLat</option>
+        <option value="">Ronaldo</option>
+        <option value="">Messi</option>
+    </select>
+    <br>
+        <label for="mk">Password</label>
+        <input type="password" name="">
+        <br>
+    <input type="radio" id="nam" name="fav_language" value="nam">
+    <label for="nam">Nam</label>
+    <input type="radio" id="nu" name="fav_language" value="nu">
+    <label for="nu">Nu</label>
+    <input type="radio" id="khac" name="fav_language" value="khac">
+    <label for="khac">Khac</label>
+    <br>
+    <input type="checkbox">
+    <label> &nbsp;</label>
+        <input type="submit" value="Submit" id="Sumbit">
+    </form>
+    <br>
+    <br>
+    <br>
+    <table border="2" style="background-color: red ;">
+        <tr>
+            <th>MSSV</th>
+            <th>Ten</th>
+            <th>DOB</th>
+            <th>Lop</th>
+        </tr>
+        <tr>
+            <td>SV01</td>
+            <td><input type="text"></td>
+            <td><input type="date"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>SV02</td>
+            <td><input type="text"></td>
+            <td><input type="date"></td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <table border="1", style="background-color: aqua; width:60%;">
+        <tr style="text-align: center;">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr style="text-align: center;">
+        <tr style="text-align: center;">
+            <td>4</td>
+            <td>6</td>
+            <td colspan="2", rowspan="2">12</td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>4</td>
+            <td>4</td>
+        </tr>
+    </tr>
+    </table>
+</body>
+</html>
