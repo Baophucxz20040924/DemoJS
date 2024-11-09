@@ -1,0 +1,17 @@
+.done {
+    display: flex;
+    background-color: green;
+    align-items: center;
+}
+
+.pending {
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    width: 90%;
+    color: white;
+    padding-left: 20px;
+}
